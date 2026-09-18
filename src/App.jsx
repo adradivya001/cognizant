@@ -7,6 +7,8 @@ import DynamicProgramPage from './app/programs/[slug]/page';
 import GurusPage from './app/gurus/page';
 import DynamicGuruPage from './app/gurus/[slug]/page';
 import AdmissionsPage from './app/admissions/page';
+import ResultsPage from './app/results/page';
+import ContactPage from './app/contact/page';
 
 // Error Boundary to prevent blank screen crashes
 class ErrorBoundary extends React.Component {
@@ -87,6 +89,12 @@ export default function App() {
     }
     if (hash === 'admissions' || pathname === '/admissions') {
       return '/admissions';
+    }
+    if (hash === 'results' || pathname === '/results') {
+      return '/results';
+    }
+    if (hash === 'contact' || pathname === '/contact') {
+      return '/contact';
     }
     return '/';
   };
@@ -180,6 +188,27 @@ export default function App() {
           onNavigateHome={() => handleNavigate('/')}
           onNavigatePrograms={() => handleNavigate('/programs')}
           onSelectProgram={(slug) => handleNavigate(`/programs/${slug}`)}
+          onNavigate={handleNavigate}
+        />
+      );
+    }
+
+    if (currentPath === '/results') {
+      return (
+        <ResultsPage
+          onNavigateHome={() => handleNavigate('/')}
+          onNavigatePrograms={() => handleNavigate('/programs')}
+          onNavigateContact={() => handleNavigate('/contact')}
+          onNavigate={handleNavigate}
+        />
+      );
+    }
+
+    if (currentPath === '/contact') {
+      return (
+        <ContactPage
+          onNavigateHome={() => handleNavigate('/')}
+          onNavigatePrograms={() => handleNavigate('/programs')}
           onNavigate={handleNavigate}
         />
       );

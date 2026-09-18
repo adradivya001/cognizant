@@ -56,9 +56,6 @@ export default function AboutPage({ onNavigateHome }: AboutPageProps) {
         {/* 2. COGNIZANT STORY */}
         <StorySection data={aboutData.story} />
 
-        {/* 3. KEY FACTS */}
-        <AboutFacts facts={aboutData.facts} />
-
         {/* 4. ACADEMIC APPROACH */}
         <AcademicApproach steps={aboutData.approach} />
 
