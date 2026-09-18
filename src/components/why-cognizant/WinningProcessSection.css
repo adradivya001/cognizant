@@ -1,0 +1,165 @@
+.wprocess-section {
+  padding: 6rem 0;
+  background-color: var(--cognizant-navy-dark, #070d1a);
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wprocess-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.wprocess-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+}
+
+.wprocess-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cognizant-orange, #f97316);
+  background: rgba(249, 115, 22, 0.12);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.wprocess-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .wprocess-title {
+    font-size: 2.5rem;
+  }
+}
+
+.wprocess-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.65;
+}
+
+.wprocess-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .wprocess-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.wprocess-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.wprocess-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cognizant-orange, #f97316);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.wprocess-card-header {
+  margin-bottom: 1.5rem;
+}
+
+.wprocess-num {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--cognizant-orange, #f97316);
+  font-family: monospace, sans-serif;
+  line-height: 1;
+}
+
+.wprocess-step-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.wprocess-short-desc {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.wprocess-full-desc {
+  font-size: 0.925rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.wprocess-highlights {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.wprocess-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.hl-icon {
+  color: var(--cognizant-orange, #f97316);
+  flex-shrink: 0;
+}
+
+.wprocess-connector {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .wprocess-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: var(--cognizant-orange, #f97316);
+    z-index: 2;
+  }
+}

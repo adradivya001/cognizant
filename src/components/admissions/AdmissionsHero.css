@@ -1,0 +1,119 @@
+.admissions-hero-section {
+  position: relative;
+  padding: 8rem 1.5rem 5rem;
+  background: linear-gradient(180deg, var(--blue-light) 0%, #ffffff 100%);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.admissions-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, var(--orange-glow) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+.admissions-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.admissions-hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.admissions-hero-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.admissions-hero-breadcrumb a:hover {
+  color: var(--primary-orange);
+}
+
+.breadcrumb-separator {
+  color: var(--border-light);
+}
+
+.breadcrumb-current {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+.admissions-hero-content {
+  max-width: 800px;
+}
+
+.admissions-hero-eyebrow {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  background: var(--orange-light);
+  border: 1px solid var(--orange-border);
+  border-radius: 9999px;
+  color: var(--primary-orange);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.admissions-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--primary-blue);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .admissions-hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+.admissions-hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.admissions-hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.admissions-hero-btn {
+  padding: 0.85rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admissions-hero-btn.primary {
+  background: var(--primary-orange);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(242, 80, 0, 0.3);
+}
+
+.admissions-hero-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 80, 0, 0.45);
+  background: var(--primary-orange-hover);
+}

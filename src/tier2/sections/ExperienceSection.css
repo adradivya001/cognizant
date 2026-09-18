@@ -1,0 +1,234 @@
+/* ==========================================================================
+   TIER 2: CHAKRA SIGNATURE EXPERIENCE (5-STAGE ORBITAL PROGRESSION)
+   80% Visual, Orbital Stages, Branded Chakra Wheel
+   ========================================================================== */
+
+.chakra-signature-section {
+  position: relative;
+  background: var(--color-bg-alt);
+}
+
+.signature-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.signature-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  margin-top: 6px;
+}
+
+.signature-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+/* Progression Container */
+.signature-progression-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Orbital Rail */
+.progression-orbital-rail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px 4px;
+}
+
+.progression-orbital-rail::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(232, 90, 45, 0.2) 0%, rgba(245, 158, 11, 0.2) 100%);
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
+.progression-step-btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 6px;
+}
+
+.step-btn-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-btn-name {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.progression-step-btn:hover .step-btn-badge {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  transform: scale(1.08);
+}
+
+.progression-step-btn.step-active .step-btn-badge {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+  box-shadow: 0 0 28px var(--color-primary-glow);
+  transform: scale(1.15);
+}
+
+.progression-step-btn.step-active .step-btn-name {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+/* Showcase Card */
+.progression-showcase-card {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.progression-visual-frame {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.progression-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInProg 0.4s ease-out;
+}
+
+@keyframes fadeInProg {
+  from { opacity: 0.6; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.progression-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 60%, var(--color-surface) 100%),
+              linear-gradient(to top, rgba(9, 12, 18, 0.7) 0%, transparent 60%);
+}
+
+.progression-chakra-motif {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 80px;
+  height: 80px;
+  color: var(--color-primary);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.chakra-wheel-svg {
+  width: 100%;
+  height: 100%;
+  animation: spinChakraWheel 24s linear infinite;
+}
+
+@keyframes spinChakraWheel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Info Panel */
+.progression-info-panel {
+  padding: var(--space-3xl) var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.progression-stage-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--color-text-subtle);
+}
+
+.progression-icon-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-secondary);
+}
+
+.progression-stage-tag {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.progression-stage-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.progression-stage-desc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .progression-showcase-card {
+    grid-template-columns: 1fr;
+  }
+  .progression-visual-frame {
+    height: 280px;
+  }
+  .progression-info-panel {
+    padding: var(--space-xl);
+  }
+}

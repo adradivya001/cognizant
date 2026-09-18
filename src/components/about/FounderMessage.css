@@ -1,0 +1,159 @@
+.founder-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.founder-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.founder-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.founder-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.founder-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .founder-title {
+    font-size: 2.5rem;
+  }
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .founder-grid {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4.5rem;
+  }
+}
+
+.founder-portrait-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 20px;
+  padding: 3.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.15);
+  border: 1px solid #e2e8f0;
+}
+
+.founder-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
+}
+
+.founder-initials {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.founder-role {
+  font-size: 0.95rem;
+  color: #f97316;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.founder-cred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.founder-message-col {
+  position: relative;
+}
+
+.quote-icon {
+  color: #f97316;
+  opacity: 0.25;
+  margin-bottom: 1rem;
+}
+
+.founder-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.founder-p {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.75;
+}
+
+.founder-signature-block {
+  border-top: 2px solid #f1f5f9;
+  padding-top: 1.25rem;
+}
+
+.sig-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sig-role {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}

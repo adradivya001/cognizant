@@ -1,0 +1,217 @@
+.guru-details-section {
+  padding: 8rem 1.5rem 6rem;
+  background-color: var(--background-alt);
+  min-height: calc(100vh - 300px);
+  color: var(--text-primary);
+}
+
+.guru-details-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.guru-details-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.guru-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.guru-back-link:hover {
+  color: var(--primary-orange);
+  transform: translateX(-4px);
+}
+
+.guru-details-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.guru-details-breadcrumb .current {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+/* Profile Card Container */
+.guru-profile-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 3.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  position: relative;
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+  .guru-profile-card {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+/* Themes */
+.guru-profile-card.theme-math { border-top: 5px solid var(--primary-orange); }
+.guru-profile-card.theme-chem { border-top: 5px solid var(--primary-blue); }
+.guru-profile-card.theme-phys { border-top: 5px solid var(--primary-orange); }
+.guru-profile-card.theme-bio { border-top: 5px solid var(--primary-blue); }
+
+/* Left Side: Avatar */
+.guru-profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guru-profile-avatar {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--background-alt);
+  border: 2px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guru-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.guru-profile-initials {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.theme-math .guru-profile-initials {
+  background: var(--orange-light);
+  color: var(--primary-orange);
+  border: 1px solid var(--orange-border);
+}
+
+.theme-chem .guru-profile-initials {
+  background: var(--blue-light);
+  color: var(--primary-blue);
+  border: 1px solid var(--blue-border);
+}
+
+.theme-phys .guru-profile-initials {
+  background: var(--orange-light);
+  color: var(--primary-orange);
+  border: 1px solid var(--orange-border);
+}
+
+.theme-bio .guru-profile-initials {
+  background: var(--blue-light);
+  color: var(--primary-blue);
+  border: 1px solid var(--blue-border);
+}
+
+.guru-subject-pill {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  color: var(--primary-blue);
+}
+
+/* Right Side: Content */
+.guru-profile-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.guru-subject-subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.theme-math .guru-subject-subtitle { color: var(--primary-orange); }
+.theme-chem .guru-subject-subtitle { color: var(--primary-blue); }
+.theme-phys .guru-subject-subtitle { color: var(--primary-orange); }
+.theme-bio .guru-subject-subtitle { color: var(--primary-blue); }
+
+.guru-profile-name {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.guru-profile-divider {
+  height: 1px;
+  background: var(--border-light);
+  margin-bottom: 1.75rem;
+}
+
+.guru-highlights-heading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 1.25rem;
+}
+
+.guru-full-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guru-full-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  background: var(--background-alt);
+  border: 1px solid var(--border-light);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+}
+
+.highlight-icon {
+  color: var(--primary-orange);
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.highlight-text {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: 500;
+}

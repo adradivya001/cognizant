@@ -1,0 +1,113 @@
+.achievement-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--orange-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.achievement-card.historical {
+  background: var(--background-alt);
+  border-top: 3px solid var(--primary-blue);
+}
+
+.achievement-card:not(.historical) {
+  border-top: 3px solid var(--primary-orange);
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.source-badge {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.badge-track {
+  color: var(--primary-orange);
+  background: var(--orange-light);
+  border: 1px solid var(--orange-border);
+}
+
+.badge-hist {
+  color: var(--primary-blue);
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+}
+
+.year-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--border-subtle);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.35rem;
+}
+
+.card-value-display {
+  margin-bottom: 0.75rem;
+}
+
+.achievement-value {
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: var(--primary-blue);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.achievement-card:not(.historical) .achievement-value {
+  color: var(--primary-orange);
+}
+
+.achievement-label {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.achievement-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+}
+
+.mentor-credit {
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.825rem;
+}
+
+.mentor-prefix {
+  color: var(--text-muted);
+}
+
+.mentor-name {
+  font-weight: 700;
+  color: var(--primary-blue);
+}

@@ -1,0 +1,126 @@
+.approach-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.approach-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.approach-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.approach-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.approach-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .approach-title {
+    font-size: 2.5rem;
+  }
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .approach-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.approach-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.25rem 1.75rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.approach-card:hover {
+  transform: translateY(-4px);
+  border-color: #1e3a8a;
+  box-shadow: 0 16px 32px -8px rgba(30, 58, 138, 0.12);
+}
+
+.approach-num-badge {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+}
+
+.approach-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.approach-card-desc {
+  font-size: 0.925rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.approach-arrow {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .approach-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+    color: #1e3a8a;
+    z-index: 2;
+  }
+}

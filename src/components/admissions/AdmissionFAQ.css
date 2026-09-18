@@ -1,0 +1,110 @@
+.admission-faq-section {
+  padding: 5rem 1.5rem;
+  background-color: var(--background);
+  border-top: 1px solid var(--border-light);
+}
+
+.admission-faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.admission-faq-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.faq-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  margin-bottom: 0.75rem;
+}
+
+.faq-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .faq-title {
+    font-size: 2.75rem;
+  }
+}
+
+.faq-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.admission-faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faq-accordion-item {
+  background: var(--background-alt);
+  border: 1px solid var(--border-light);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-accordion-item.open {
+  border-color: var(--orange-border);
+  background: #ffffff;
+  box-shadow: var(--shadow-md);
+}
+
+.faq-accordion-button {
+  width: 100%;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.faq-accordion-button:hover {
+  color: var(--primary-orange);
+}
+
+.faq-chevron {
+  transition: transform 0.3s ease;
+  color: var(--primary-orange);
+  flex-shrink: 0;
+}
+
+.faq-accordion-item.open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-accordion-content {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.faq-answer-text {
+  color: var(--text-secondary);
+  font-size: 0.975rem;
+  line-height: 1.65;
+  margin: 1rem 0 0 0;
+}

@@ -1,0 +1,64 @@
+.admission-overview-section {
+  padding: 5rem 1.5rem;
+  background-color: var(--background-alt);
+}
+
+.admission-overview-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.admission-overview-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.overview-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  margin-bottom: 0.75rem;
+}
+
+.overview-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .overview-title {
+    font-size: 2.75rem;
+  }
+}
+
+.overview-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.admission-pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .admission-pathways-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .admission-pathways-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

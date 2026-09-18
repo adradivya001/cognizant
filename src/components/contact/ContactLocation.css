@@ -1,0 +1,135 @@
+.contact-location-section {
+  padding: 5rem 1.5rem;
+  background-color: var(--background-alt);
+  border-top: 1px solid var(--border-light);
+}
+
+.contact-location-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-location-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.loc-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  margin-bottom: 0.75rem;
+}
+
+.loc-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .loc-title {
+    font-size: 2.75rem;
+  }
+}
+
+.loc-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.location-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--primary-blue);
+}
+
+.location-card-left {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.loc-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.loc-text-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary-orange);
+  margin-bottom: 0.25rem;
+}
+
+.loc-campus-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.loc-address {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.25rem 0;
+}
+
+.loc-city {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin: 0;
+}
+
+.directions-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 85, 165, 0.25);
+}
+
+.directions-btn:hover {
+  background: var(--primary-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 85, 165, 0.4);
+}

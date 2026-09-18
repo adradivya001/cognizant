@@ -1,0 +1,41 @@
+.achievement-filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.achievement-filter-bar {
+  display: inline-flex;
+  gap: 0.5rem;
+  background: var(--background);
+  border: 1px solid var(--border-light);
+  padding: 0.4rem;
+  border-radius: 9999px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achievement-filter-btn {
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.04em;
+}
+
+.achievement-filter-btn:hover {
+  color: var(--primary-orange);
+  background: var(--orange-light);
+}
+
+.achievement-filter-btn.active {
+  background: var(--primary-orange);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(242, 80, 0, 0.3);
+}

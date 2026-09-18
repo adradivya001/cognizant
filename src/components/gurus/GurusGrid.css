@@ -1,0 +1,272 @@
+.gurus-grid-section {
+  padding: 3.5rem 1.5rem 6rem;
+  background-color: var(--background-alt);
+  min-height: 500px;
+}
+
+.gurus-grid-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Filter Bar */
+.gurus-filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.gurus-filter-bar {
+  display: inline-flex;
+  gap: 0.5rem;
+  background: var(--background);
+  border: 1px solid var(--border-light);
+  padding: 0.4rem;
+  border-radius: 9999px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-tab-btn {
+  padding: 0.6rem 1.35rem;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.05em;
+}
+
+.filter-tab-btn:hover {
+  color: var(--primary-orange);
+  background: var(--orange-light);
+}
+
+.filter-tab-btn.active {
+  background: var(--primary-orange);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(242, 80, 0, 0.3);
+}
+
+/* Faculty Grid */
+.gurus-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .gurus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gurus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Faculty Card Base Styling */
+.guru-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 1.25rem;
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.guru-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--orange-border);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Subject Accent Themes */
+.guru-card.theme-math {
+  border-top: 4px solid var(--primary-orange);
+}
+
+.guru-card.theme-chem {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.guru-card.theme-phys {
+  border-top: 4px solid var(--primary-orange);
+}
+
+.guru-card.theme-bio {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.guru-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Initials Avatar */
+.guru-avatar-placeholder {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.theme-math .guru-avatar-placeholder {
+  background: var(--orange-light);
+  border: 1px solid var(--orange-border);
+  color: var(--primary-orange);
+}
+
+.theme-chem .guru-avatar-placeholder {
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  color: var(--primary-blue);
+}
+
+.theme-phys .guru-avatar-placeholder {
+  background: var(--orange-light);
+  border: 1px solid var(--orange-border);
+  color: var(--primary-orange);
+}
+
+.theme-bio .guru-avatar-placeholder {
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  color: var(--primary-blue);
+}
+
+.guru-subject-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.theme-math .guru-subject-badge { color: var(--primary-orange); }
+.theme-chem .guru-subject-badge { color: var(--primary-blue); }
+.theme-phys .guru-subject-badge { color: var(--primary-orange); }
+.theme-bio .guru-subject-badge { color: var(--primary-blue); }
+
+.guru-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Highlights list */
+.guru-highlights-preview {
+  margin: 1.25rem 0 1.75rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.guru-highlight-item {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+.guru-highlight-item::before {
+  content: "•";
+  position: absolute;
+  left: 0.25rem;
+  top: -0.05rem;
+  color: var(--primary-orange);
+  font-size: 1.2rem;
+}
+
+.guru-card-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.guru-view-profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.guru-view-profile-btn:hover {
+  color: var(--primary-orange);
+  transform: translateX(4px);
+}
+
+/* Final Note Card */
+.final-note-card {
+  margin-top: 3rem;
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  border-radius: 1.25rem;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.final-note-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid var(--orange-border);
+  color: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.final-note-content h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin: 0 0 0.25rem 0;
+}
+
+.final-note-content p {
+  color: var(--text-secondary);
+  font-size: 0.975rem;
+  margin: 0;
+}
+
+/* Empty State */
+.no-gurus-found {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}

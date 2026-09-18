@@ -1,0 +1,120 @@
+.smaterial-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.smaterial-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.smaterial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .smaterial-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4.5rem;
+  }
+}
+
+.smaterial-visual-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 20px;
+  padding: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.15);
+  border: 1px solid #e2e8f0;
+}
+
+.smaterial-icon-badge {
+  width: 76px;
+  height: 76px;
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f97316;
+  margin-bottom: 1.5rem;
+}
+
+.smaterial-visual-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.smaterial-visual-sub {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.smaterial-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.smaterial-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .smaterial-title {
+    font-size: 2.5rem;
+  }
+}
+
+.smaterial-desc {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.smaterial-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.smaterial-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.feat-icon {
+  color: #f97316;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}

@@ -1,0 +1,126 @@
+.counselling-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.counselling-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.counselling-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+}
+
+.counselling-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.counselling-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .counselling-title {
+    font-size: 2.5rem;
+  }
+}
+
+.counselling-desc {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.counselling-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .counselling-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .counselling-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.counselling-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.counselling-card:hover {
+  transform: translateY(-4px);
+  border-color: #f97316;
+  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.1);
+}
+
+.counselling-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.counselling-icon-box {
+  width: 42px;
+  height: 42px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a8a;
+}
+
+.counselling-step-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  font-family: monospace, sans-serif;
+}
+
+.counselling-stage-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.counselling-stage-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+}

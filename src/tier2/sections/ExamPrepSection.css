@@ -1,0 +1,148 @@
+/* Exam Preparation Split Section Styling */
+
+.exam-prep-section {
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.exam-split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+.exam-card {
+  padding: 40px 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.exam-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.exam-card-badge {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.exam-group-tag {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+}
+
+.exam-group-tag.neet-tag {
+  color: var(--color-secondary);
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.exam-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.jee-icon {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--color-primary);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.neet-icon {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--color-secondary);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.exam-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.exam-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.exam-subjects-list {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.sub-heading-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.subject-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.subject-pill {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.subject-pill.neet-pill {
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.exam-target-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.exam-card-cta {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .exam-split-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

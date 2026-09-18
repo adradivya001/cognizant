@@ -1,0 +1,52 @@
+/* Trust Strip Section Styling */
+
+.trust-strip-container {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 18px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.trust-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trust-icon {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.trust-text {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.trust-divider {
+  color: var(--color-border-strong);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .trust-strip-inner {
+    justify-content: center;
+  }
+  .trust-divider {
+    display: none;
+  }
+}

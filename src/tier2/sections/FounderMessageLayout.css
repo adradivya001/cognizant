@@ -1,0 +1,135 @@
+/* Founder Message Layout Styling */
+
+.founder-message-section {
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.founder-msg-container {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  padding: 56px 48px;
+  box-shadow: var(--shadow-lg);
+}
+
+.founder-msg-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.founder-msg-img-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 5;
+  background: var(--color-surface-alt);
+}
+
+.founder-msg-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-msg-name-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(6, 10, 20, 0.95) 0%, rgba(6, 10, 20, 0) 100%);
+  padding: 24px 16px 14px 16px;
+  text-align: center;
+}
+
+.founder-msg-name-tag h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.founder-msg-name-tag span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.founder-msg-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin: 14px 0 24px 0;
+  letter-spacing: -0.01em;
+}
+
+.founder-msg-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.quote-watermark {
+  color: rgba(245, 158, 11, 0.25);
+  margin-bottom: 4px;
+}
+
+.founder-msg-para {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+}
+
+.founder-msg-signoff {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+.signoff-closing {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.signoff-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.signoff-role {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 992px) {
+  .founder-msg-container {
+    padding: 32px 24px;
+  }
+  .founder-msg-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .founder-msg-image-col {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}

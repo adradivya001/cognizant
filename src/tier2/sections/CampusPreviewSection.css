@@ -1,0 +1,182 @@
+/* ==========================================================================
+   TIER 2: CAMPUS PREVIEW SECTION (INTERACTIVE VISUAL SHOWCASE)
+   80% Visual, Step Inside, Instant Dynamic Switch
+   ========================================================================== */
+
+.campus-preview-section {
+  position: relative;
+  background: var(--color-bg-alt);
+}
+
+.campus-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.campus-preview-statement {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.explore-section-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: rgba(232, 90, 45, 0.08);
+  border: 1px solid rgba(232, 90, 45, 0.25);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.explore-section-cta:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  box-shadow: 0 0 16px var(--color-primary-glow);
+  transform: translateX(4px);
+}
+
+/* Interactive Tabs */
+.campus-interactive-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-lg);
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.campus-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-text-subtle);
+  transition: all var(--transition-fast);
+}
+
+.campus-tab-btn:hover {
+  color: var(--color-text);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.campus-tab-btn.tab-active {
+  background: rgba(232, 90, 45, 0.15);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+  box-shadow: 0 0 20px var(--color-primary-glow);
+}
+
+.campus-tab-btn.tab-active .tab-indicator-dot {
+  background: var(--color-primary);
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+/* Dynamic Showcase Viewport */
+.campus-showcase-viewport {
+  position: relative;
+  height: 520px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.showcase-active-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInCross 0.4s ease-out;
+}
+
+@keyframes fadeInCross {
+  from { opacity: 0.7; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.showcase-gradient-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(9, 12, 18, 0.92) 0%,
+    rgba(9, 12, 18, 0.3) 45%,
+    transparent 100%
+  );
+}
+
+.showcase-caption-overlay {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 650px;
+}
+
+.showcase-cat-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.showcase-caption-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.25;
+}
+
+.showcase-caption-desc {
+  font-size: 0.95rem;
+  color: rgba(243, 244, 246, 0.85);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .campus-showcase-viewport {
+    height: 380px;
+  }
+  .showcase-caption-overlay {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+}

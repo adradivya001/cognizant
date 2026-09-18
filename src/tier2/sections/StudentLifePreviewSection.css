@@ -1,0 +1,176 @@
+/* ==========================================================================
+   TIER 2: STUDENT LIFE PREVIEW SECTION (DYNAMIC COLLAGE)
+   80% Visual, Asymmetric Event Collage, Micro Category Tags
+   ========================================================================== */
+
+.student-life-preview-section {
+  position: relative;
+  background: var(--color-bg-alt);
+}
+
+.student-life-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.category-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.category-micro-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-secondary);
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.student-life-statement {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 6px;
+  line-height: 1.15;
+}
+
+.student-life-sub {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin-top: 4px;
+}
+
+/* Asymmetric Collage Grid */
+.student-life-collage-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.life-collage-main {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 480px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.life-collage-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.life-collage-main:hover img {
+  transform: scale(1.03);
+}
+
+.life-main-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(9, 12, 18, 0.92) 0%, rgba(9, 12, 18, 0.2) 50%, transparent 100%);
+}
+
+.life-main-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  z-index: 2;
+}
+
+.life-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--color-secondary);
+}
+
+.life-main-caption h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+
+/* Supporting Sub Grid */
+.life-collage-sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.life-sub-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.life-sub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+
+.life-sub-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.life-sub-card:hover img {
+  transform: scale(1.05);
+}
+
+.sub-card-1 {
+  grid-column: 1 / -1;
+  height: 230px;
+}
+
+.sub-card-2, .sub-card-3 {
+  height: 230px;
+}
+
+.sub-card-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(9, 12, 18, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+  .student-life-collage-grid {
+    grid-template-columns: 1fr;
+  }
+  .life-collage-main {
+    height: 360px;
+  }
+}
